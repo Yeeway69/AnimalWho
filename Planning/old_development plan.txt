@@ -1,0 +1,138 @@
+Revised Unity Development Plan (Current Phase):
+
+CNN Model Development:
+
+Train model using MobileNetV2 architecture
+Test with the 10 animal classes
+Export model in format suitable for Unity
+Document model performance and parameters
+
+
+Unity Implementation:
+A. Project Setup
+
+Create new Unity project
+Set up version control
+Import necessary packages:
+
+Unity ML Agents (for ML model integration)
+Unity Mobile Tools
+UI Toolkit/UGUI for interface
+
+
+
+B. Camera System
+
+Implement mobile camera access
+Photo capture functionality
+Image processing utilities:
+
+Resize to match CNN input size (224x224)
+Format conversion
+Basic image preprocessing
+
+
+
+C. User Interface
+
+Main camera view
+Capture/upload button
+Loading indicator
+Results display panel
+Simple animal name display
+Basic error handling UI
+
+D. Model Integration
+
+Import trained CNN model
+Create inference system
+Setup image preprocessing pipeline
+Implement result processing
+Basic performance optimization
+
+
+Testing & Documentation:
+
+Test on different devices
+Performance benchmarking
+User flow documentation
+Technical documentation
+Known limitations
+
+
+
+Project Structure:
+CopyAssets/
+├── Scripts/
+│   ├── Camera/
+│   │   ├── CameraController.cs
+│   │   └── PhotoCapture.cs
+│   ├── ML/
+│   │   ├── ModelLoader.cs
+│   │   └── InferenceManager.cs
+│   └── UI/
+│       ├── UIManager.cs
+│       └── ResultsDisplay.cs
+├── Prefabs/
+│   ├── UI Elements/
+│   └── Camera Setup/
+├── Models/
+│   └── AnimalClassifier/
+├── Scenes/
+│   ├── Main.unity
+│   └── Test.unity
+└── Resources/
+    └── ML Models/
+Key Features for Current Phase:
+
+Photo Capture/Upload:
+
+Camera access
+Image capture
+Gallery upload option
+Basic image validation
+
+
+Animal Detection:
+
+Real-time processing
+Clear result display
+Confidence score
+Error handling
+
+
+User Interface:
+
+Clean, child-friendly design
+Clear instructions
+Responsive feedback
+Loading states
+
+
+
+Technical Considerations:
+
+Mobile Performance:
+
+Optimize model inference
+Efficient image processing
+Memory management
+Battery usage optimization
+
+
+Error Handling:
+
+Camera permission handling
+Model loading errors
+Processing failures
+Network issues
+
+
+Testing Requirements:
+
+Different Android/iOS devices
+Various lighting conditions
+Different image sizes
+Performance metrics
+
+This plan focuses on the core requirements for the current phase while keeping in mind the future integration of the Llama model and quiz functionality. It provides a solid foundation that can be easily extended in future phases.

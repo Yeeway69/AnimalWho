@@ -1,0 +1,44 @@
+Objective
+In this lab, you will design the first phase of a real-time animal identification and educational app using Deep Learning techniques. The task is inspired by a request from the Luthadel Zoo to create an interactive application for children. This lab focuses on implementing a Convolutional Neural Network (CNN) to classify animals and prepare the data for generating educational questions.
+
+Setup and Instructions
+To complete this lab, follow these steps:
+
+Photo Upload and Animal Identification
+
+Simulate the process where a user uploads a photo of an animal using their mobile device.
+Train a CNN model to identify which animal is present in the image.
+Dataset
+
+Use the Kaggle Animals Dataset (linked in the attached PDF).
+Limit the dataset to 10 classes:
+Antelope
+Bear
+Elephant
+Jellyfish
+Mouse
+Turtle
+Penguin
+Ladybugs
+Leopard
+Lion
+Deliverables
+
+Python Notebook 
+Implement and document the CNN model using a Jupyter Notebook.
+Include Markdown explanations for each step of the process, from data preparation to model evaluation.
+Explanatory Report 
+Include a brief document summarizing the following:
+Parameters tested (architecture, learning rate, epochs, batch size).
+Results (accuracy, loss, overfitting/underfitting analysis).
+Number of models trained and tested, and their performance.
+Deliverables Submission
+Submit your deliverables through a Google Drive link or GitHub repository. Ensure all files are organized and accessible.
+
+Evaluation Criteria
+
+Criteria	Points	Description
+CNN Implementation 	5	Accurate implementation of the CNN for animal classification.
+Model Performance 	4	Achieves a reasonable level of accuracy without overfitting or underfitting.
+Documentation and Code 	3	Clean, well-documented code with clear explanations of each process in the notebook.
+Parameter Exploration 	3	Systematic exploration and reporting of the effects of different parameters (e.g., learning rate).

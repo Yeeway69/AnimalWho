@@ -1,0 +1,135 @@
+Revised General Plan:
+
+Phase A: CNN Development (with google colab)
+Goal: Create and train a robust animal classification model
+a. Dataset Preparation:
+
+Download Kaggle Animals Dataset (700MB)
+Extract and organize 10 animal classes:
+
+antelope, bear, elephant, jellyfish, mouse
+turtle, penguin, ladybugs, leopard, lion
+
+
+Preprocess images:
+
+Resize to 224x224 (MobileNetV2 standard)
+Normalize pixel values
+Setup data augmentation
+
+
+Split data (80/10/10):
+
+Training set
+Validation set
+Test set
+
+
+
+b. Model Development:
+
+Implement MobileNetV2 architecture
+Initialize with random weights (no pre-training)
+Configure output for 10 classes
+Setup training pipeline
+
+c. Training & Testing:
+
+Parameter experimentation:
+
+Learning rates
+Batch sizes
+Number of epochs
+Optimizers
+
+
+Monitor and document:
+
+Training/validation accuracy
+Loss curves
+Per-class performance
+
+
+Save best performing model
+
+
+Phase B: Unity Implementation
+Goal: Create a functional demo application
+a. Project Setup:
+
+Create new Unity project
+Import required packages:
+
+ML model support
+UI elements (TextMeshPro)
+
+
+Setup basic project structure
+
+b. Core Features:
+
+Image Input System:
+
+Inspector-based image field
+Upload/Scan button
+Basic image processing
+
+
+Model Integration:
+
+Load trained model
+Setup inference pipeline
+Process results
+
+
+Result Display:
+
+Animal name
+Confidence score
+Error handling
+
+
+
+c. Testing & Documentation:
+
+Test various images
+Document performance
+Create user guide
+
+
+Deliverables Preparation
+Goal: Complete documentation of process and results
+a. Jupyter Notebook:
+
+Dataset preparation code
+Model implementation
+Training process
+Results and analysis
+Clear markdown documentation
+
+b. Summary Report:
+
+Parameter testing results:
+
+Architecture details
+Learning rates tested
+Batch sizes tested
+Number of epochs
+
+
+Performance metrics:
+
+Final accuracy
+Loss curves
+Confusion matrix
+
+
+Unity implementation details
+Future recommendations
+
+This revised plan focuses on:
+
+Meeting all assignment requirements
+Efficient development process
+Clear documentation
+Easy transition to future phases
